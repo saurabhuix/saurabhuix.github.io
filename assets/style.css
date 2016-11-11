@@ -1,0 +1,824 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+ul,
+li {
+    list-style-type: none;
+}
+body {
+    font: 14px/18px Verdana, Arial, Helvetica, sans-serif;
+    color: #fff;
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    float: left;
+    display: block;
+    background-color: #000;
+}
+
+#wraper {
+    height: 100%;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+}
+
+#topHeader {
+    height: 50px;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background: #fcfbfb;
+}
+#topHeader h1 {
+    width: 234px;
+    float: left;
+    background: #000;
+}
+#topHeader h1 a {
+    display: block;
+    overflow: hidden;
+    margin-top: 0px;
+    float: left;
+    width: 234px;
+    font-size: 28px;
+    font-family: serif;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: normal;
+}
+#topHeader div {
+    width: auto;
+}
+#topHeader div + div {
+    height: 50px;
+    background-color: #fcfbfb;
+}
+#topHeader div + div + div {
+    width: 19%;
+    text-align: center;
+    padding: 0;
+}
+#topHeader div + div + div label {
+    border-left: 1px solid #222222;
+    display: block;
+    padding: 13px 30px 0 30px;
+    height: 100%;
+    overflow: hidden;
+}
+#topHeader div + div + div label span {
+    display: block;
+    background-color: #3a3a3a;
+    padding: 2px;
+    height: 25px;
+}
+#topHeader ul li {
+    width: 16%;
+}
+#topHeader ul li a{
+    display: block;
+    padding: 16px 0;
+    text-align: center;
+    background-color: #fcfbfb;
+    text-decoration: none;
+    color: #000;
+    border-right: 0px solid #222222;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+#topHeader ul li a:hover {
+    color: #aa0000;
+}
+#topHeader div p {
+    float: left;
+    margin: 16px 10px 0 10px;
+    font-size: 12px;
+    color: #c9c9c9;
+}
+#topHeader h1,
+#topHeader div,
+#topHeader ul li{
+    float: left;
+    height: 50px;
+    margin-top: -50px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.animate #topHeader h1,
+.animate #topHeader div,
+.animate #topHeader ul li{
+    margin-top: 0;
+}
+.animate #topHeader h1 {
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+}
+.animate #topHeader li{
+    -webkit-transition-delay: 1.4s;
+    -moz-transition-delay: 1.4s;
+}
+.animate #topHeader li + li {
+    -webkit-transition-delay: 1.6s;
+    -moz-transition-delay: 1.6s;
+}
+.animate #topHeader li + li + li {
+    -webkit-transition-delay: 1.8s;
+    -moz-transition-delay: 1.8s;
+}
+.animate #topHeader div + div {
+    -webkit-transition-delay: 2s;
+    -moz-transition-delay: 2s;
+}
+.animate #topHeader div + div + div {
+    -webkit-transition-delay: 2.2s;
+    -moz-transition-delay: 2.2s;
+}
+#menuM {
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+#menuM ul li a {
+    display: block;
+    padding: 16px 0;
+    text-align: center;
+    background-color: #fcfbfb;
+    text-decoration: none;
+    color: #000;
+    border-right: 0px solid #222222;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+#menuM ul li a {
+    background: none;
+}
+#menuM ul li {
+    float: left;
+    height: 50px;
+    margin-top: -50px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+#menuM ul li {
+    margin-top: 0;
+}
+#menuM ul li {
+    -webkit-transition-delay: 1.4s;
+    -moz-transition-delay: 1.4s;
+}
+#landingpage,
+#aboutus,
+#contact,
+#team {
+    background-color: #ddd;
+    height: 100%;
+    width: 100%;
+    top: 50px;
+}
+
+#landingpage section,
+#team section,
+#aboutus section,
+#contact section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.contentRight {
+    font-size: 14px;
+    color: #000;
+    height: 100%;
+    margin: 0 0px;
+    position: relative;
+    overflow: hidden;
+}
+.content-r-inner {
+    padding: 40px 24px 24px 24px;
+}
+.contentRight h2 {
+    font-family: sans-serif;
+    font-size: 52px;
+    font-weight: bold;
+    letter-spacing: -4px;
+    line-height: 66px;
+}
+
+.contentRight h2 span {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.contentRight p {
+    margin: 30px 0;
+    font-size: 16px;
+    line-height: 22.85px;
+    color: #424141;
+    font-family: sans-serif;
+}
+.contentRight p.sep {
+    width: 3%;
+    margin: 10px auto;
+    height: 5px;
+    overflow: hidden;
+    background: #000;
+    clear: both;
+}
+.contentRight h3 {
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    padding: 85px 0 25px 0;
+    line-height: 24px;
+    text-align: center;
+    color: #040404;
+}
+#contact .contentRight h3 {
+    color: #000;
+    font-family: "montserrat";
+    font-size: 38px;
+    font-weight: 200;
+    line-height: 52px;
+    padding: 50px 0 0;
+    text-align: left;
+}
+.contentRight .bottom {
+    border-top: 1px solid #ccc;
+    height: 100px;
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+}
+.cent {
+    color: #000;
+    font-family: serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 22.85px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#aboutus .contentRight h3 {
+    font-size: 20px;
+    font-weight: 200;
+    font-family: 'Inconsolata', sans-serif;
+    padding: 55px 0 55px 0;
+    line-height: 24px;
+    text-align: center;
+    color: #040404;
+    text-align: center;
+}
+
+#team .post {
+    overflow: auto !important;
+    position: relative;
+    z-index: 9999999;
+}
+
+#team .contentRight,
+#contact .contentRight,
+#aboutus .contentRight {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.mMenu {
+    float: right;
+    overflow: hidden;
+    display: none;
+    cursor: pointer;
+    color: #000;
+    padding: 16px;
+}
+
+.clear, .sa5a  {
+    clear: both;
+}
+
+.sa {
+    color: #666666;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28.85px;
+    letter-spacing: 1px;
+}
+.sad {
+    color: #000;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+    font-weight: normal;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+.team-footer {
+    padding-top: 110px;
+    padding-bottom: 20px;
+}
+.team-skills {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.aboutpage {
+    background: #E5E7E6 none repeat scroll 0 0;
+}
+.contactpage {
+    background-color: #e5e7e6 none repeat scroll 0 0;
+}
+.landingpage {
+    background: #000
+}
+.infodivider {
+    color: red;
+    font-size: 25px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+.team-footer a {
+    font-size: 15px;
+}
+.team-footer i {
+    font-size: 18px;
+}
+.subtitle {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 22.85px;
+    text-transform: uppercase;
+}
+.right-content-inner {
+    height: 100%;
+    position: absolute;
+}
+.right-content-table {
+    display: table;
+    height: 100%;
+}
+.right-content-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/***** Ipad Landscape mode display *****/
+
+@media all and (max-device-width: 1040px) and (min-device-width: 811px) and (orientation: landscape),
+all and (max-width: 1040px) and (min-width: 811px) and (orientation: landscape) {
+    #topHeader div {
+        width: 63%;
+    }
+    #topHeader ul li {
+        width: 15%;
+    }
+    #topHeader ul li a {
+        font-size: 14px;
+    }
+}
+
+/***** Ipad Portrait mode display *****/
+
+@media all and (max-device-width: 810px) and (min-device-width: 760px) and (orientation: portrait),
+all and (max-width: 810px) and (min-width: 760px) and (orientation: portrait) {
+    body {
+        overflow: visible;
+    }
+    .mMenu {
+        display: block;
+    }
+    #topHeader div {
+        float: left !important;
+        width: 46%;
+    }
+    #menu,
+    #menuM {
+        width: 100%!important;
+        position: fixed;
+        z-index: 9;
+        top: -1280px;
+        background: rgba(255, 255, 255, 0.8);
+        height: 100%!important;
+    }
+    #menuM ul {
+        margin-top: 30%;
+    }
+    #menuM.act {
+        top: 50px;
+    }
+    #menu ul li,
+    #menuM ul li {
+        width: 100%;
+        margin: 0px;
+        float: none;
+        display: block;
+    }
+    #topHeader {
+        overflow: visible;
+    }
+    #topHeader ul li a,
+    #menuM ul li a {
+        background: none;
+    }
+    #aboutus section,
+    #contact section,
+    #team section {
+        width: 100%;
+    }
+    #aboutus,
+    #contact,
+    #team {
+        height: auto;
+    }
+    .ss-pg {
+        display: none;
+    }
+    .ss-pg-curr,
+    .ss-pg-curr1,
+    .no-js .ss-pg {
+        display: block;
+    }
+    .content-r-inner {
+        padding: 50px 0;
+    }
+    #team .postcontentarea {
+        margin: 0 0px;
+    }
+}
+/***** Mobile overall mode display *****/
+
+@media all and (max-device-width: 759px) and (min-device-width: 200px),
+all and (max-width: 759px) and (min-width: 200px) {
+    body {
+        overflow: visible;
+    }
+    .mMenu {
+        display: block;
+    }
+    #topHeader div {
+        float: left !important;
+        width: 46%;
+    }
+    #menu,
+    #menuM {
+        width: 100%!important;
+        position: fixed;
+        z-index: 9;
+        top: -100%;
+        background: rgba(255, 255, 255, 0.8);
+        height: 100% !important;
+    }
+    #menuM.act {
+        top: 50px;
+        overflow: scroll;
+    }
+    #menuM ul {
+        margin-top: 5%;
+    }
+    #menuM ul li {
+        width: 100%;
+        margin: 0px;
+        float: none;
+        display: block;
+    }
+    #topHeader {
+        overflow: visible;
+    }
+    #topHeader ul li a {
+        background: none;
+    }
+    #aboutus section,
+    #contact section,
+    #team section {
+        width: 100%;
+    }
+    #aboutus,    
+    #team {
+        height: auto;
+    }
+    .ss-pg {
+        display: none;
+    }
+    .ss-pg-curr,
+    .ss-pg-curr1,
+    .no-js .ss-pg {
+        display: block;
+    }
+}
+@media all and (max-device-width: 759px) and (min-device-width: 200px) and (orientation: portrait),
+all and (max-width: 759px) and (min-width: 200px) and (orientation: portrait) {
+    #menuM ul {
+        margin-top: 10%;
+    }
+}
+/***** Phablet portrait mode display *****/
+
+@media screen and (max-width: 650px) and (min-width: 501px),
+screen and (max-device-width: 650px) and (min-device-width: 501px) {
+    #menuM ul {
+        margin-top: 5%;
+    }
+}
+/***** Iphone Overall mode display *****/
+
+@media screen and (max-width: 500px) and (min-width: 200px),
+screen and (max-device-width: 500px) and (min-device-width: 200px) {    
+    #menuM {
+        height: 100% !important;
+    }
+}
+
+.margin-560 {
+    margin: 36px 0;
+}
+
+@media screen and (max-width: 500px) and (min-width: 400px),
+screen and (max-device-width: 500px) and (min-device-width: 400px) {
+    #menuM ul {
+        margin-top: 2%;
+    }
+}
+@media screen and (max-width: 500px) and (min-width: 400px) and (orientation: portrait),
+screen and (max-device-width: 500px) and (min-device-width: 400px) and (orientation: portrait) {
+    #menuM ul {
+        margin-top: 50%;
+    }
+}
+/***** Iphone Landscape mode display *****/
+
+@media screen and (max-width: 660px) and (min-width: 400px) and (orientation: landscape),
+screen and (max-device-width: 660px) and (min-device-width: 400px) and (orientation: landscape) {
+    #menuM ul {
+        margin-top: 2%;
+    }
+}
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #000;
+}
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #000;
+    opacity: 1;
+}
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #000;
+    opacity: 1;
+}
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #000;
+}
+
+.team-skills .sa5a:first-child {
+    padding: 0;
+}
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+.contact-main {
+    font-family: serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    padding: 24px;
+}
+.divider30 {
+    padding: 30px;
+}
+#landingpage .sad {
+    width: 310px;
+    text-align: left;
+}
+.parent {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.child {
+    display: table-cell;
+    vertical-align: middle;
+}
+@media (max-width: 800px) {
+    .landing-box {
+        top: 50px;
+        bottom: auto;
+    }
+}
+#landingpage .contentRight h2 {
+    font-family: serif;
+    font-weight: 900;
+}
+.pad20 {
+    padding: 20px;
+}
+@media (max-width: 810px) {
+    #topHeader div {
+        width: 69%;
+    }
+    #topHeader ul li a,
+    #menuM ul li a {
+        font-size: 15px;
+    }
+}
+.resume-download-button {
+    padding: 36px 0;
+    text-align: center;
+}
+.resume-title {
+    color: #000;
+    font-family: serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 22.85px;
+    text-transform: uppercase;
+    padding: 16px
+}
+.resume-meta {
+    padding: 8px 0;
+
+}
+.white {
+    color: #fff;
+    padding: 20px 0 0 0;
+}
+.education-line {
+    border: 1px solid rgb(52, 161, 217);
+    position: absolute;
+    top: 52px;
+    width: 110%;
+    margin-left: 5px;
+    z-index: -1;
+}
+#team .sad {
+    text-align: left;
+}
+.edu-info .col-sm-6 {
+    padding: 15px;
+}
+.edu-info .col-md-3 {
+    padding: 15px;
+}
+.edu-info > .subtitle {
+    margin: 24px 0;
+    font-weight: bold;
+    font-size: 19px;
+}
+.edu-info .col-sm-4 {
+    padding: 15px;
+}
+.border-right {
+    border-right: 2px solid rgb(52, 161, 217);
+}
+.circle-responsive {
+    background: #ddd none repeat scroll 0 0;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+.circle-content {
+    color: #000;
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 21px;
+    padding-top: 60px;
+    text-align: center;
+    text-indent: 0;
+}
+.color-DB872D {
+    background: #db872d none repeat scroll 0 0 !important;
+    margin: 0 auto;
+    position: relative;
+    z-index: 40;
+}
+.color-DE6F7F {
+    background: #de6f7f none repeat scroll 0 0 !important;
+    left: -79px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -85px;
+    position: relative;
+    z-index: 30;
+}
+.color-65AC50 {
+    background: #65ac50 none repeat scroll 0 0 !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -151px;
+    position: relative;
+    right: -81px;
+    z-index: 20;
+}
+.color-DD56F1 {
+    background: #dd56f1 none repeat scroll 0 0 !important;
+    margin: -64px auto 0;
+    position: relative;
+    z-index: 10;
+}
+.codeskillicon {
+    padding: 48px 0;
+    font-weight: bold;
+}
+
+.landingpage .subtitle {
+    color: #fff;
+    text-align: center;
+}
+.landingpage h2 {
+    color: #fff;
+    text-align: center;
+}
+.landingpage .sad {
+    color: #fff;
+    text-align: center !important;
+}
+.no-pad-home {
+    padding: 0px !important;
+}
+#contact ::-webkit-input-placeholder {
+    color: #fff;
+}
+#contact :-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+#contact ::-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+#contact :-ms-input-placeholder {    
+    color: #fff;
+}
+#team .subtitle, #aboutus .subtitle, #contact .subtitle {
+    color: #000;
+}
+#team .contentRight h2 {    
+    max-width: 700px;
+}
+.download-resume {
+    margin-top: 36px;
+}
+#topHeader ul li {
+    margin-left:15px !important;
+    margin-right:15px !important;
+    width: auto !important;
+    float: right;
+}
+.author-title{
+    margin: auto; 
+    display: table;
+}
+.about-images{
+    max-width: 100%;
+    margin-bottom: 66px;
+}
+
+
+
